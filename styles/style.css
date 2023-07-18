@@ -93,25 +93,24 @@ nav {
 
 .banner-container {
     display: flex;
-    gap:1%;
+    gap: 1%;
     align-items: center;
-    /* max-width: 1200px;
-    margin: 10px auto; */
     text-align: center;
     margin: 10px 0px;
-   
+
 
 }
+
 .banner-content {
     width: 50%;
     height: 700px;
     background-image: url("../images/banner-content-img.png"),
-    linear-gradient(223deg, rgba(140, 87, 238, 0.03) 0%, rgba(241, 68, 174, 0.03) 100%);
+        linear-gradient(223deg, rgba(140, 87, 238, 0.03) 0%, rgba(241, 68, 174, 0.03) 100%);
     background-repeat: no-repeat;
     background-size: contain;
     display: grid;
     align-items: center;
-    
+
 }
 
 .banner-subtitle {
@@ -147,7 +146,7 @@ nav {
 
 .singin-btn {
     border-radius: 2.8rem;
-    background:linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+    background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
     color: #FFF;
     font-size: 1.2rem;
     font-weight: 600;
@@ -156,7 +155,8 @@ nav {
     margin: 15px;
     border: none;
 }
-.goRogue-btn{
+
+.goRogue-btn {
     border-radius: 2.8rem;
     background: #4EC5F7;
     color: #FFF;
@@ -175,4 +175,74 @@ nav {
 .banner-img img {
     width: 100%;
     height: 100%;
+}
+
+/* funny video styles */
+.funny-video-section {
+    max-width: 1200px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+
+.funny-video-title {
+    color: var(--black);
+    font-size: 2.8rempx;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.funnyvideo-tag {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+.funny-video-para {
+    color: #534C64;
+    margin-top: 10px;
+}
+
+.funny-card-container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 20px;
+  
+.funny-card img{
+    width: 90%;
+    height: 80%;
+}
+/* funny card -> overlay funny-card-container-container */
+.funny-card{
+    position: relative;
+}
+.overlay-icon{color:#fff;font-size: 2.5rem;}
+.overlay-title{
+    color:#911756;
+    font-size: 1.4rem;
+    font-weight: 800;
+    margin-top: 10px;
+}
+.overlay{
+    position: absolute;
+    width: 90%;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0 auto;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    background: #7a7878;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.content{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+.funny-card:hover .overlay{
+    opacity: 0.8;
 }
