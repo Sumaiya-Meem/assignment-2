@@ -8,18 +8,27 @@
 
 :root {
     --primarycolor: #FF42A5;
+    --black: #0B0223;
 }
 
 body {
     font-family: 'Work Sans', sans-serif;
 }
 
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
 header {
     background: #FFF;
-    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
 }
 
 nav {
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
@@ -46,7 +55,7 @@ nav {
 }
 
 .logo-container h1 {
-    color: #0B0223;
+    color: var(--black);
     font-size: 2.8rem;
     font-weight: 700;
 }
@@ -61,12 +70,9 @@ nav {
     justify-content: space-between;
 }
 
-.menu-item li {
-    list-style: none;
-}
+
 
 .menu-item a {
-    text-decoration: none;
     color: #3C354F;
     font-size: 1.1rem;
     font-weight: 500;
@@ -78,6 +84,95 @@ nav {
     padding: 10px 24px;
 
 }
+
 .fa-brands {
-   margin-left: 1.1rem;
+    margin-left: 1.1rem;
+}
+
+/* banner style */
+
+.banner-container {
+    display: flex;
+    gap:1%;
+    align-items: center;
+    /* max-width: 1200px;
+    margin: 10px auto; */
+    text-align: center;
+    margin: 10px 0px;
+   
+
+}
+.banner-content {
+    width: 50%;
+    height: 700px;
+    background-image: url("../images/banner-content-img.png"),
+    linear-gradient(223deg, rgba(140, 87, 238, 0.03) 0%, rgba(241, 68, 174, 0.03) 100%);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: grid;
+    align-items: center;
+    
+}
+
+.banner-subtitle {
+    color: var(--black);
+    font-size: 2.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.banner-title {
+    font-size: 5.6rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+.banner-list {
+    width: 60%;
+    margin: 5px auto;
+}
+
+.banner-list li {
+    text-align: left;
+}
+
+.banner-list .banner-icon {
+    margin-right: 5px;
+    color: var(--primarycolor);
+    padding: 5px;
+}
+
+.singin-btn {
+    border-radius: 2.8rem;
+    background:linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+    color: #FFF;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 20px;
+    margin: 15px;
+    border: none;
+}
+.goRogue-btn{
+    border-radius: 2.8rem;
+    background: #4EC5F7;
+    color: #FFF;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 20px;
+    margin: 15px;
+    border: none;
+}
+
+.banner-img {
+    width: 50%;
+}
+
+.banner-img img {
+    width: 100%;
+    height: 100%;
 }

@@ -1,23 +1,85 @@
+@media screen and (max-width:576px) {
 
-@media screen and (max-width:576px){
-    nav ,.menu-item ul{
+    nav,
+    .menu-item ul {
         flex-direction: column;
     }
-    .menu-item {width: 100%;}
-    .menu-item li{margin: 18px 0px; }
-    .menu-item .follow-us { padding: 8px 10px;}
-    .fa-brands {margin-left: 0.3rem;}
-     /* nav responsive end */
-    
-}
-@media screen and (min-width:576px) and (max-width:924px){
-    nav ,.menu-item ul{
-        flex-direction: column;
-    }
+
     .menu-item {
         width: 100%;
     }
-    .menu-item li{
+
+    .menu-item li {
+        margin: 18px 0px;
+    }
+
+    .menu-item .follow-us {
+        padding: 8px 10px;
+    }
+
+    .fa-brands {
+        margin-left: 0.3rem;
+    }
+
+    /* nav responsive end */
+    /* banner section start */
+    .banner-container {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    .banner-img,
+    .banner-content {
+        width: 100%;
+        height: 370px;
+    }
+    .banner-img img {
+        width: 80%;
+    }
+    .banner-subtitle {font-size: 2rem;}
+    
+    .banner-title {
+        font-size: 4rem;
+        font-weight: 600;
+    }
+    .singin-btn,
+    .goRogue-btn {
+        border-radius: 2rem;
+        font-size: 1.2rem;
+        padding: 10px;
+        margin-right: 5px;
+    }
+    /* banner section end */
+
+}
+
+@media screen and (min-width:576px) and (max-width:924px) {
+
+    nav,
+    .menu-item ul {
+        flex-direction: column;
+    }
+
+    .menu-item {
+        width: 100%;
+    }
+
+    .menu-item li {
         margin: 15px 0px;
+    }
+    .banner-content {height: 300px;}
+
+    .banner-subtitle {font-size: 2rem;}
+
+    .banner-title {
+        font-size: 4rem;
+        font-weight: 600;
+    }
+    .singin-btn,
+    .goRogue-btn {
+        border-radius: 2rem;
+        font-size: 1.2rem;
+        padding: 10px;
+        margin-right: 5px;
     }
 }
