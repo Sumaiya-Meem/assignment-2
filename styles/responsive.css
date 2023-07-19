@@ -57,8 +57,11 @@
     .funny-video-para ,.funny-video-title {
        padding: 0px 5px;
     }
+    .funny-card-para{margin-bottom: 30px;}
     /* feature start */
-   
+    .feature-heading {
+        margin-right: 0px;
+    }
     .feature-info{
         width:80%;
         text-align: center;
@@ -67,6 +70,8 @@
         width: 70%;
         margin-top: 40px;
     }
+    .funny-card-para{margin-bottom: 30px;}
+    /* games type start */
     .games-type{
         grid-template-columns: repeat(3,1fr);
         gap:10px;
@@ -80,7 +85,21 @@
         width: 40px;
         margin: 1px;
     }
-    
+    /* footer styles*/
+    .footer-info-link ul{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .footer-about-info{
+        grid-template-columns: repeat(2,1fr);
+        gap:15px;
+    }
+    .footer-quick-link{
+        grid-template-columns: repeat(3,1fr);
+     }
+     .footer-para{
+        grid-template-columns:1fr;
+        gap:5px;
+    }
 
 }
 
@@ -124,16 +143,18 @@
         margin-right: 50px;
      }
      .games-type{
-        grid-template-columns: repeat(4,1fr);
+        grid-template-columns: repeat(3,1fr);
+        gap:10px;
        
     }
     .games-type-container{
         gap:5px;
+        margin: 0px 10px;
         
     }
     .games-type-container img{
         width: 50px;
-        margin: 1px;
+        margin: 2px;
     }
     
     
