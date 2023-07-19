@@ -1,7 +1,7 @@
 @media screen and (max-width:576px) {
 
     nav,
-    .menu-item ul {
+    .menu-item ul, .feature-section{ 
         flex-direction: column;
     }
 
@@ -57,6 +57,30 @@
     .funny-video-para ,.funny-video-title {
        padding: 0px 5px;
     }
+    /* feature start */
+   
+    .feature-info{
+        width:80%;
+        text-align: center;
+    }
+    .feature-img{
+        width: 70%;
+        margin-top: 40px;
+    }
+    .games-type{
+        grid-template-columns: repeat(3,1fr);
+        gap:10px;
+       
+    }
+    .games-type-container{
+        gap:5px;
+        
+    }
+    .games-type-container img{
+        width: 40px;
+        margin: 1px;
+    }
+    
 
 }
 
@@ -93,4 +117,24 @@
     .funny-card-container {
         grid-template-columns: repeat(2,1fr);
     }
+    .feature-heading{
+        font-size: 2.2rem;
+    }
+    .feature-para {
+        margin-right: 50px;
+     }
+     .games-type{
+        grid-template-columns: repeat(4,1fr);
+       
+    }
+    .games-type-container{
+        gap:5px;
+        
+    }
+    .games-type-container img{
+        width: 50px;
+        margin: 1px;
+    }
+    
+    
 }
